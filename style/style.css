@@ -133,3 +133,69 @@ ul{
 .slider{
     height: 1000px;
 }
+.products{
+    border-top: 0.3vw solid #CFC0BD;
+}
+.filter{
+    padding: 2vw 4vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.filter h3{
+    font-size: 30px;
+    flex: 1;
+    text-align: left;
+}
+
+.filter-txt{
+    padding: 0;
+    margin: 0;
+    background-color: #CFC0BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0vw 4vw ;
+}
+.boxes{
+    padding: 0 2vw 0 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+.box{
+    padding: 2%;
+    border: #CFC0BD 0.5vw solid;
+    width: 30vw;
+    height: 45vw;
+    flex: 1 1 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.box img{
+    width: 60%;
+    height: auto;
+    top: 30vw;
+}
+.desc-txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8vw;
+    flex-wrap: wrap;
+}
+.desc-txt h3 {
+    flex-wrap: 4%;
+    text-align: center;
+}
+.desc-txt h4 {
+    text-align: center;
+    flex: 1;
+    font-size: 4vw;
+    background-color: rgb(21, 165, 117);
+    padding: 1vw;
+    border-radius: 0.6vw;
+    /* flex-wrap: 20%; */
+}
