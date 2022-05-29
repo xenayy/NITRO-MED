@@ -1,4 +1,5 @@
 *{
+    font-family: 'Bebas Neue', cursive;
     padding: 0;
     margin: 0;
 }
@@ -6,23 +7,45 @@ body{
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
 .header {
-    background-color: #586F6B;
+    padding: 0 2vw 0 2vw;
+    background-color: #FF0000;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 2vh;
+    margin: 0;
 }
-.header h1 a{
-    text-decoration: none;
-    color: #DDD5D0;
-    font-family: Canela;
-    font-weight: lighter;
+.logo, .logo img{
+    width: 30%;
+    padding: 0;
+    float: left;
+    margin: 0;
+    /* margin: 0; */
+    height: auto;
+    /* border: solid 2px black; */
+}
+.header ul{
+    display: flex;
+    gap: 3vw;
+}
+.header ul li a{
+    font-family: 'Bebas Neue';
+    color: black;
 }
 .department ul li a {
     text-decoration: none;
-    color: hsl(23, 16%, 50%);
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-shadow: 2px 2px rgb(139, 139, 139);
 }
 .department ul{
     padding: 3vw 15vw;
@@ -31,8 +54,26 @@ body{
     justify-content: space-between;
 }
 .department {
-    background-color: #CFC0BD;
+    background-color: #FFD07B;
     border-bottom: solid 1px hsl(0, 0%, 70%);
+}
+.flash-sale{
+    padding: 2vw;
+    /* border: 2px solid black; */
+    /* animation: opa 3s infinite;
+    animation-iteration-count: calc(2);
+}
+@keyframes opa {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+     */
 }
 .image{
     display: flex;
@@ -42,16 +83,53 @@ body{
 }
 .image img {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
-.price{
+.flash-txt{
+    padding: 1vw;
     transform: skewX(-20deg);
     box-shadow: 10px 10px 5px hsl(0, 0%, 20%);
     background-color: red;
     position: absolute;
+    font-family: 'Dancing Script';
     color: #CFC0BD;
+    animation: opa 2s infinite;
+    animation-iteration-count: infinite;
 }
+@keyframes opa {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+   
+}
+.infos{
+    color: hsl(10, 16%, 48%);
+    padding: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2vw;
+    background-color: #FFD07B;
+}
+.infos h4{
+    color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+    background-color: #FDB833 ;
+}
+.infos p a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5vw;
+    color: hsl(10, 16%, 48%);
+}
+
 .slider{
     height: 1000px;
 }
