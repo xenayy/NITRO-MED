@@ -158,10 +158,12 @@ ul{
     padding: 0vw 4vw ;
 }
 .boxes{
-    padding: 0 2vw 0 2vw;
+    padding: 0 2vw 2vw 2vw;
     display: flex;
     flex-wrap: wrap;
     gap: 5vw;
+    border-bottom: solid 1px hsl(0, 0%, 70%);
+
 }
 .box{
     padding: 2%;
@@ -173,30 +175,44 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 .box img{
-    width: 60%;
+    width: 50%;
     height: auto;
     top: 30vw;
 }
+
 .desc-txt{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 8vw;
-    flex-wrap: wrap;
 }
-.desc-txt h6 {
-    flex: 1 1 50%;
-    font-size: larger;
-    text-align: center;
-}
-.desc-txt h5 {
-    text-align: center;
-    flex: 1 1 3%;
+.desc-txt h1 {
     font-size: 4vw;
+    /* font-size: larger; */
+    text-align: center;
+}
+.desc-txt h2 {
+    text-align: center;
+    /* font-size: 4vw; */
     background-color: rgb(21, 165, 117);
     padding: 1vw;
     border-radius: 0.6vw;
     /* flex-wrap: 20%; */
+}
+.nitro img {
+    width: 40%;
+    height: auto;
+}
+.footer{
+    padding: 2vw;
+    text-align: center;
+    background-color:#1789FC;
+}
+.footer p{
+    color: white;
+    font-size: smaller;
+    font-family: 'Open Sans';
 }
