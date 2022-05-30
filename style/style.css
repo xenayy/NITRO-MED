@@ -199,14 +199,20 @@ ul{
     /* font-size: 4vw; */
     background-color: rgb(21, 165, 117);
     padding: 1vw;
-    border-radius: 0.6vw;
+    border-radius: 1vw;
     /* flex-wrap: 20%; */
+}
+.mass img{
+    width: 70%;
 }
 .nitro img {
     width: 40%;
     height: auto;
 }
 .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 2vw;
     text-align: center;
     background-color:#1789FC;
